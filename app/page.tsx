@@ -46,42 +46,30 @@ export default function Home() {
 
         {/* Statistics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-8">
-
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
             <p className="text-slate-400 text-sm">
               Total Projects
             </p>
-
-            <p className="text-3xl font-bold mt-2">
-              3
-            </p>
+            <p className="text-3xl font-bold mt-2">3</p>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
             <p className="text-slate-400 text-sm">
               Processing
             </p>
-
-            <p className="text-3xl font-bold mt-2">
-              1
-            </p>
+            <p className="text-3xl font-bold mt-2">1</p>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
             <p className="text-slate-400 text-sm">
               Deployed
             </p>
-
-            <p className="text-3xl font-bold mt-2">
-              1
-            </p>
+            <p className="text-3xl font-bold mt-2">1</p>
           </div>
-
         </div>
 
         {/* Recent Projects */}
         <div className="mt-10">
-
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-semibold">
               Recent Projects
@@ -93,14 +81,12 @@ export default function Home() {
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
-
             {projects.map((project) => (
               <div
                 key={project.name}
                 className="p-5 border-b border-slate-800 last:border-b-0 hover:bg-slate-800/50 transition"
               >
                 <div className="flex items-center justify-between">
-
                   <div>
                     <h3 className="font-medium">
                       {project.name}
@@ -112,7 +98,6 @@ export default function Home() {
                   </div>
 
                   <div className="text-right">
-
                     <span
                       className={`inline-block px-3 py-1 rounded-full text-xs font-medium ${
                         project.status === "Deployed"
@@ -128,16 +113,12 @@ export default function Home() {
                     <p className="text-xs text-slate-500 mt-2">
                       {project.updated}
                     </p>
-
                   </div>
-
                 </div>
               </div>
             ))}
-
           </div>
         </div>
-
       </section>
     </main>
   );
